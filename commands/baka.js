@@ -36,7 +36,7 @@ module.exports = {
             console.error(error.meesage);
         });
     },
-    name: "Baka",
+    name: "baka",
     guildOnly: true,
     help : {
         description: "Insulté quelqu'un",
