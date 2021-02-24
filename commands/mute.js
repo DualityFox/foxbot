@@ -4,7 +4,7 @@ module.exports = {
     run: async (message, args) => {
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("Vous n'avez pas la permission ``Administrateur``")
         const member = message.mentions.members.first()
-        if (!member) return message.channel.send('Veuillez mentionner le membre à mute.\nUtilisation : ``dbd/mute @mention <raison>``')
+        if (!member) return message.channel.send('Veuillez mentionner le membre à mute.\nUtilisation : ``fb!mute @mention <raison>``')
         if (member.id === message.guild.ownerID) return message.channel.send('On ne mute pas le propriétaire du serveur voyons.')
         if (message.member.roles.highest.comparePositionTo(member.roles.highest) < 1 && message.author.id !== message.guild.ownerID) return message.channel.send('Vous ne pouvez pas mute ce membre.')
         if (!member.manageable) return message.channel.send("Mon rôle n'est pas assez élevé pour mute ce membre.")
