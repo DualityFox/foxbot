@@ -30,7 +30,7 @@ module.exports = {
             })
         }
         else {
-            return message.reply("Va dans un salon vocal et réésaye ")
+            return message.reply("Va dans un salon vocal et réessaye ")
         }
     },
     name: 'play',
