@@ -21,6 +21,6 @@ module.exports = {
     guildOnly: true,
     help : {
         description: "Banni l'utilisateur mentionné",
-        syntax: "<@mention> [raison]"
+        syntax: "[@mention] <raison>"
     }
 }
