@@ -4,7 +4,7 @@ module.exports = {
     run: async (message, args) => {
         if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.send("Tu n'as pas la permission ``Expulser des membres``.")
         const member = message.mentions.members.first()
-        if (!member) return message.channel.send("Merci de mentionner le membre à exclure\nUtilisation : ``fb!kick @mention <raison>``")
+        if (!member) return message.channel.send("Merci de mentionner le membre à exclure\nUtilisation : ``fb!kick [@mention] <raison>``")
         if (member.id === message.guild.ownerID) return message.channel.send("On n'exclu pas le propriétaire du serveur voyons !!!")
         if(message.member.roles.highest.comparePositionTo(member.roles.highest) < 1 && message.author.id !== message.guild.ownerID) return message.channel.send("Vous ne pouvez pas exclure ce membre")
         if(!member.kickable) return message.channel.send("Mon rôle n'est pas assez élevé pour exclure ce membre !")
