@@ -11,7 +11,7 @@ module.exports = {
         if(message.member.roles.highest.comparePositionTo(member.roles.highest) < 1 && message.author.id !== message.guild.ownerID) return message.channel.send("Vous ne pouvez pas exclure ce membre")
         if(!member.bannable) return message.channel.send("Mon rôle n'est pas assez élevé pour bannir temporairement ce membre !")
         const duration = parseDuration(args[1])
-        if(!duration) return message.channel.send("Merci de préciser une durée\nUtilisation : ``dbd/tempban @mention <durée> <raison>``")
+        if(!duration) return message.channel.send("Merci de préciser une durée\nUtilisation : ``fb!tempban [@mention] [durée] <raison>``")
         const reason = args.slice(2).join(" ") || 'Aucune raison fournie'
         await member.ban({reason})
         message.channel.send( new Discord.MessageEmbed()
