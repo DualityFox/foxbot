@@ -18,7 +18,7 @@ module.exports = {
         if (!muteRole) {
             muteRole = await message.guild.roles.create({
                 data: {
-                    name: 'Muted by DualityBot',
+                    name: 'Muted by •|Fox Bot|•',
                     permissions: 0
                 }
             })
