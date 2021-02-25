@@ -28,11 +28,18 @@ client.on('message', message => {
     command.run(message, args, client)
 })
 client.on(`guildMemberAdd`, member => {
-    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`Bienvenue ${member}.\n`)
+    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(new Discord.MessageEmbed()
+            .setTitle(`Bienvenue ${member}`)
+            .setDescription(`Bienvenue sur •|Fox Graff|•`)
+            .setColor('#01E800')
+            .addField(`${member}, nous te souhaitons tous la bienvenue sur •|Fox Graff|• !!!\nPasse un bon moment et respecte les règles`,true)
+            .setThumbnail('https://cdn.discordapp.com/attachments/813735778374123533/814518794491920384/04ad7d2f130e6b7e6fa11c85436715b1.png')
+            .setTimestamp()
+            )
 })
 
 client.on(`guildMemberRemove`, member => {
-    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${member.user.tag} a quitté le serveur... 😢`)
+    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`Oh non !!! ${member.user.tag} nous a quitté ... 😢`)
 })
 
 client.on( 'ready', () => {
