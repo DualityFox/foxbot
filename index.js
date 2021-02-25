@@ -45,8 +45,8 @@ client.on(`guildMemberRemove`, member => {
 client.on( 'ready', () => {
     client.user.setStatus("dnd")
     const statuses = [
-        () => `bientôt •|Fox Graff|•`,
-        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)} utilisateurs`
+        () => `•|Fox Graff|•`,
+        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 25} utilisateurs`
     ]
     let i = 0
     setInterval(() => {
