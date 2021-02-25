@@ -28,11 +28,11 @@ client.on('message', message => {
     command.run(message, args, client)
 })
 client.on(`guildMemberAdd`, member => {
-    member.guild.channels.cache.find(channel => channel.id === "814137803808964679").send(`${member} a rejoint le serveur.`)
+    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`Bienvenue ${member}.\n`)
 })
 
 client.on(`guildMemberRemove`, member => {
-    member.guild.channels.cache.find(channel => channel.id === "814137803808964679").send(`${member.user.tag} a quitté le serveur... 😢`)
+    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${member.user.tag} a quitté le serveur... 😢`)
 })
 
 client.on( 'ready', () => {
