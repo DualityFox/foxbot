@@ -32,7 +32,7 @@ client.on(`guildMemberAdd`, member => {
             .setTitle(`Bienvenue ${member}`)
             .setDescription(`Bienvenue sur •|Fox Graff|•`)
             .setColor('#01E800')
-            .addField(`${member}, nous te souhaitons tous la bienvenue sur •|Fox Graff|• !!!\nPasse un bon moment et respecte les règles`,true)
+            .addField(`${member}, nous te souhaitons tous la bienvenue sur •|Fox Graff|• !!!\nPasse un bon moment et respecte les règles`,)
             .setThumbnail('https://cdn.discordapp.com/attachments/813735778374123533/814518794491920384/04ad7d2f130e6b7e6fa11c85436715b1.png')
             .setTimestamp()
             )
