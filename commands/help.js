@@ -15,7 +15,7 @@ module.exports = {
             .setTitle('Liste des commandes')
             .setDescription(`Pour plus d'info sur une commande tapez \`${config.prefix}help [nom de la commande]\``)
             .setColor('#01E800')
-            .addField('⚙️Administration :', '``ban``・``clear``・``kick``・``mute``・``tempban``・``tempmute``・``unmute``・``warn``',true)
+            .addField('⚙️Administration :', '``ban``・``clear``・``kick``・``mute``・``tempban``・``tempmute``・``unmute``・``warn``・``infractions``',true)
             .addField('🎉Amusement :', '``hug``・``kiss``・``pat``・``slap``・``smug``・``tickle``・``feed``・``baka``', true)
             .addField('🎵Musique :', '``play``・``disconnect``', true)
             .addField('📸Image :','``fox_girl``・``neko``・``waifu``・``meow``', true)
