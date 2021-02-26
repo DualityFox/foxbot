@@ -46,7 +46,7 @@ client.on( 'ready', () => {
     client.user.setStatus("dnd")
     const statuses = [
         () => `•|Fox Graff|•`,
-        () => `les ${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 25} membres sur •|Fox Graff|•`
+        () => `les ${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 26} membres sur •|Fox Graff|•`
     ]
     let i = 0
     setInterval(() => {
