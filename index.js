@@ -31,7 +31,7 @@ client.on(`guildMemberAdd`, member => {
     member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(new Discord.MessageEmbed()
             .setTitle(`Bienvenue ${member.user.username}`)
             .setDescription(`Bienvenue sur •|Fox Graff|•`)
-            .setColor('#01E800')
+            .setColor('random')
             .addField(`${member.user.username}`,`${member.user.username}, nous te souhaitons tous la bienvenue sur •|Fox Graff|• !!!\nPasse un bon moment et respecte les règles`)
             .setThumbnail('https://cdn.discordapp.com/attachments/813735778374123533/814518794491920384/04ad7d2f130e6b7e6fa11c85436715b1.png')
             .setTimestamp()
