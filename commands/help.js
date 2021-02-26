@@ -19,7 +19,7 @@ module.exports = {
             .addField('🎉Amusement :', '``hug``・``kiss``・``pat``・``slap``・``smug``・``tickle``・``feed``・``baka``', true)
             .addField('🎵Musique :', '``play``・``disconnect``', true)
             .addField('📸Image :','``fox_girl``・``neko``・``waifu``・``meow``', true)                    
-            .addField('📌Autre :','``help``・``botinfo``・``serverinfo``・``userinfo``', true)
+            .addField('📌Autre :','``help``・``help18``・``botinfo``・``serverinfo``・``userinfo``', true)
             .addField('🔗Lien utile :','[Ajoute-moi](https://discord.com/oauth2/authorize?client_id=813734273894842370&scope=bot&permissions=2147483647) | [Donne ton avis sur •|Fox Graff|•](https://top.gg/servers/731599872892993626) | [Vote pour •|Fox Graff|•](https://top.gg/servers/731599872892993626)', false)
             .setThumbnail('https://cdn.discordapp.com/attachments/722009128448426005/726462278853197865/54772.gif')
             .setFooter('Bot crée par The King DualityFox#2382',)
