@@ -12,7 +12,7 @@ module.exports = {
             .addField('🔞NSFW :', '``boobs``・``femdom``・``fox_girl_lewd``・``funck``・``hentai``・``nekolewd``・``nsfw_avatar``・',true)
             .addField(`\u200b`,`\u200b`, true)
             .addField(`\u200b`,`\u200b`, true)
-            .addField('🔗Lien utile :','[Ajoute-moi](https://discord.com/oauth2/authorize?client_id=813734273894842370&scope=bot&permissions=2147483647) | [Donne ton avis sur •|Fox Graff|•](https://top.gg/servers/731599872892993626) | [Vote pour •|Fox Graff|•](https://top.gg/servers/731599872892993626)', false)
+            .addField('🔗Lien utile :','[Donne ton avis sur •|Fox Graff|•](https://top.gg/servers/731599872892993626) | [Vote pour •|Fox Graff|•](https://top.gg/servers/731599872892993626)', false)
             .setThumbnail('https://cdn.discordapp.com/attachments/814095992856641536/814096083482574910/SxvPigf.gif')
             .setFooter('Bot crée par The King DualityFox#2382',)
             .setTimestamp()
