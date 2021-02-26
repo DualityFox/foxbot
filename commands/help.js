@@ -20,7 +20,7 @@ module.exports = {
             .addField('🎵Musique :', '``play``・``disconnect``', true)
             .addField('📸Image :','``fox_girl``・``neko``・``waifu``・``meow``', true)                    
             .addField('📌Autre :','``help``・``botinfo``・``serverinfo``・``userinfo``', true)
-            .addField('🔗Lien utile (Actuellement indisponible) :','[Ajoute-moi] | [Serveur de support] | [Vote pour le serveur](https://top.gg/servers/731599872892993626)', false)
+            .addField('🔗Lien utile (Actuellement indisponible) :','[Ajoute-moi] | [Donne ton avis sur le serveur](https://top.gg/servers/731599872892993626) | [Vote pour le serveur](https://top.gg/servers/731599872892993626)', false)
             .setThumbnail('https://cdn.discordapp.com/attachments/722009128448426005/726462278853197865/54772.gif')
             .setFooter('Bot crée par The King DualityFox#2382',)
             .setTimestamp()
