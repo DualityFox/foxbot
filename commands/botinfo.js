@@ -8,7 +8,7 @@ module.exports = {
         message.channel.send(new Discord.MessageEmbed()
         .setDescription(`Information sur **${client.user.tag}**`)
         .setThumbnail(client.user.displayAvatarURL(String))
-        .addField('ID :', '722338677925216269',true)
+        .addField('ID :', '813734273894842370',true)
         .addField('Crée le :',moment.utc(client.user.createdAt).format("LLL"),true)
         .addField(`\u200b`,`\u200b`, true)
         .addField('Créateur :','The King DualityFox#2382', true)
