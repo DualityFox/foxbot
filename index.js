@@ -49,7 +49,8 @@ client.on( 'ready', () => {
         () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0)} utilisateurs !`,
         () => `${client.guilds.cache.size} serveurs !`,
         () => `Rejoins •|Fox Graff|• avec ce lien : https://discord.gg/ZU7hPjfVDf`,
-        () => `Je suis un robot déguisé en renard déguisé en robot !`
+        () => `Je suis un robot déguisé en renard déguisé en robot !`,
+        () => `Mon préfix est fb!`
     ]
     let i = 0
     setInterval(() => {
