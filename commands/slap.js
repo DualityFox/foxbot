@@ -23,7 +23,7 @@ module.exports = {
                     const parsedData = JSON.parse(rawData);
     
                     message.channel.send(new Discord.MessageEmbed()
-                    .setDescription(`**${message.author.username}** met une claque **${message.mentions.members.first().user.username}**`)
+                    .setDescription(`**${message.author.username}** met une claque à **${message.mentions.members.first().user.username}**`)
                     .setImage(parsedData.url)
                     .setFooter(`${client.user.username}`))
                 } catch (error) {
