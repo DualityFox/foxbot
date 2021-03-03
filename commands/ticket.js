@@ -23,8 +23,7 @@ module.exports = {
             author: message.author.id
         }
         fs.writeFileSync('./db.json', JSON.stringify(client.db))
-        channel.send(new Discord.MessageEmbed()
-            .setDescription(`Bonjour ${message.member}, bienvenue dans votre ticket.\nPour fermer de ticket tape fb!close .`))
+        channel.send(`Bonjour ${message.member}, bienvenue dans votre ticket.\nPour fermer de ticket tape fb!close .`)
         message.channel.send(`Votre ticket ${channel} a été créé !`)
     },
     name: 'ticket',
