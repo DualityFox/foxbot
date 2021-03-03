@@ -7,7 +7,7 @@ module.exports = {
         if (!message.member.hasPermission('MANAGE_MESSAGES') && client.db.tickets[channel.id].author !== message.author.id) return message.channel.send('Vous n\'avez pas la permission de fermer ce ticket.')
         delete client.db.tickets[channel.id]
         fs.writeFileSync('./db.json', JSON.stringify(client.db))
-        await message.channel.send(`Le ticket ${channel.name} a été fermé !`)
+        await message.channel.send(`Le ticket ${channel.name} a été fermé avec succès !`)
         channel.delete()
     },
     name: 'close',
