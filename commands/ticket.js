@@ -28,5 +28,8 @@ module.exports = {
         message.channel.send(`Votre ticket ${channel} a été créé !`)
     },
     name: 'ticket',
-    guildOnly: true
+    guildOnly: true,
+    help : {
+        description: "Ouvre un ticket à votre nom"
+    }
 }
