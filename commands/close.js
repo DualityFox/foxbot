@@ -11,5 +11,8 @@ module.exports = {
         channel.delete()
     },
     name: 'close',
-    guildOnly: true
+    guildOnly: true,
+    help : {
+        description: "Ferme votre ticket"
+    }
 }
