@@ -13,7 +13,7 @@ module.exports = {
         .addField('Surnom :', `${member.nickname === undefined ? ` ` : `${member.nickname}`}`,true)
         .addField('Tag :',`${user.tag}`,true)
         .addField('ID :',`${user.id}`,true)
-        .addField('Bot :',`${user.bot ? '<:botdiscord:817299655653588992> ': 'Non'}`,true)
+        .addField('Bot :',`${user.bot ? 'Oui': 'Non'}`,true)
         .addField('Statut :',`${user.presence.status.toUpperCase()}`,true)
         .addField('Compte crée le :',`${moment(user.createdAt).format('LLL')}`, true)
         .addField("Date d'arrivée :",`${moment(member.joinedAt).format('LLL')}`, true)
