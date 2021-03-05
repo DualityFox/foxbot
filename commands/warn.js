@@ -23,7 +23,7 @@ module.exports = {
         .addField('Raison :', `${reason}`, true)
         .addField(`Modérateur:`,`${message.author.username}`, true)
         ),
-        message.mentions.members.first().createDM().then(channel => {channel.send(`Tu à était averti sur le serveur ${guild.name} pour la raison suivante : ${reason}`)});
+        message.mentions.members.first().createDM().then(channel => {channel.send(`Tu à était averti sur le serveur ${guild.name} pour la raison suivante : \`${reason}\`.`)});
     },
     name: 'warn',
     guildOnly: true,
