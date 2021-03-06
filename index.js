@@ -27,9 +27,9 @@ client.on('message', message => {
     if (command.guildOnly && !message.guild) return message.channel.send('Je ne répond pas au commande en mp !')
     command.run(message, args, client)
 })
-client.on(`guildMemberAdd`, member => {
-    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${replies[Math.floor(Math.random() * replies.length)]}`)
-    replies = [`${member} ! Bienvenue sur •|Fox Graff|• !`, `Accueillions tous ${member} qui débarque sur •|Fox Graff|• !`, `Oh ! Un(e) petit(e) nouveau(elle) !\nBienvenue à toi ${member} !`, `${member}, bonjour, passe un bon moment sur •|Fox Graff|• !`]
+
+client.on(`guildMemberAdd`, member => { replies = [`${member} ! Bienvenue sur •|Fox Graff|• !`, `Accueillions tous ${member} qui débarque sur •|Fox Graff|• !`, `Oh ! Un(e) petit(e) nouveau(elle) !\nBienvenue à toi ${member} !`, `${member}, bonjour, passe un bon moment sur •|Fox Graff|• !`]
+   member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${replies[Math.floor(Math.random() * replies.length)]}`)
 })
 
 client.on(`guildMemberRemove`, member => {
