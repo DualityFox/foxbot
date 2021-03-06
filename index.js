@@ -27,15 +27,9 @@ client.on('message', message => {
     if (command.guildOnly && !message.guild) return message.channel.send('Je ne répond pas au commande en mp !')
     command.run(message, args, client)
 })
+replies = [`${member} ! Bienvenue sur •|Fox Graff|• !`, `Accueillions tous ${member} qui débarque sur •|Fox Graff|• !`, `Oh ! Un(e) petit(e) nouveau(elle) !\nBienvenue à toi ${member} !`, `${member}, bonjour, passe un bon moment sur •|Fox Graff|• !`]
 client.on(`guildMemberAdd`, member => {
-    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(new Discord.MessageEmbed()
-            .setTitle(`Bienvenue ${member.user.username}`)
-            .setDescription(`Bienvenue sur •|Fox Graff|•`)
-            .setColor('random')
-            .addField(`${member.user.username}`,`${member.user.username}, nous te souhaitons tous la bienvenue sur •|Fox Graff|• !!!\nPasse un bon moment et respecte les règles`)
-            .setThumbnail('https://cdn.discordapp.com/attachments/813735778374123533/814518794491920384/04ad7d2f130e6b7e6fa11c85436715b1.png')
-            .setTimestamp()
-            )
+    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${replies[Math.floor(Math.random() * replies.length)]}`)
 })
 
 client.on(`guildMemberRemove`, member => {
