@@ -6,9 +6,7 @@ module.exports = {
         let member = await client.users.fetch(args[0]);
         if (!member) return message.channel.send("L'utilisateur n'existe pas où plus");
         message.guild.members.unban(member)
-        message.channel.send( new Discord.MessageEmbed()
-        .setDescription(`**${member.username}** à été débanni`)
-        )
+        message.channel.send(`**${member.username}** à été débanni`)
     },
     name: 'unban',
     guildOnly: true,
