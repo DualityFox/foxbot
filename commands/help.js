@@ -23,7 +23,7 @@ module.exports = {
             .addField('📌Autre :','``help``・``botinfo``・``serverinfo``・``userinfo``', true)
             .addField('🔗 Lien utile :','[Donne ton avis sur •|Fox Graff|•](https://top.gg/servers/731599872892993626) | [Vote pour •|Fox Graff|•](https://top.gg/servers/731599872892993626) | [Donne ton avis et note •|Fox Graff|• sur DISBOARD](https://disboard.org/fr/server/731599872892993626)', false)
             .setThumbnail('https://cdn.discordapp.com/attachments/722009128448426005/726462278853197865/54772.gif')
-            .setFooter('Bot crée par The King DualityFox#2382',)
+            .setFooter('Bot crée par DuALiTyFoX#8912',)
             .setTimestamp()
             )
         }
