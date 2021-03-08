@@ -14,7 +14,7 @@ module.exports = {
             .addField(`\u200b`,`\u200b`, true)
             .addField('🔗Lien utile :','[Donne ton avis sur •|Fox Graff|•](https://top.gg/servers/731599872892993626) | [Vote pour •|Fox Graff|•](https://top.gg/servers/731599872892993626)', false)
             .setThumbnail('https://cdn.discordapp.com/attachments/814095992856641536/814096083482574910/SxvPigf.gif')
-            .setFooter('Bot crée par The King DualityFox#2382',)
+            .setFooter('Bot crée par DuALiTyFoX#8912',)
             .setTimestamp()
             )
     },
