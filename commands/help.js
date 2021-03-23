@@ -22,7 +22,7 @@ module.exports = {
             const page2 = new Discord.MessageEmbed()
             .setTitle('⚙️ Administration :')
             .setDescription("Voici toutes les commandes d'administration")
-            .addField('Liste des commandes', '``ban``・``clear``・``kick``・``mute``・``tempban``・``tempmute``・``unmute``・``warn``・``infractions``',true)
+            .addField('Liste des commandes', '``ban``・``clear``・``kick``・``mute``・``tempban``・``tempmute``・``unmute``・``warn``・``unwarn``・``infractions``',true)
             .setColor('#ff0707')
             .setTimestamp();
 
