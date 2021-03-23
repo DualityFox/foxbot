@@ -40,7 +40,7 @@ client.on( 'ready', () => {
     client.user.setStatus("dnd")
     const statuses = [
         () => `•|Fox Graff|•`,
-        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 26} membres sur •|Fox Graff|• !`,
+        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 25} membres sur •|Fox Graff|• !`,
         () => `Je suis un robot déguisé en renard déguisé en robot !`,
         () => `Merci à Nounard 👁⃤ pour ma magnique photo de profil`,
         () => `Mon préfix est fb!`
