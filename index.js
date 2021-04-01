@@ -62,3 +62,7 @@ client.on('channelCreate', channel => {
         ADD_REACTIONS: false
     })
 })
+
+client.on('message', message => {
+    if (message.content === "@everyone") return message.channel.send(`\`${message.author.tag}\`, il est interdit de mentionner everyone\n\`(sauf si tu est DuALiTyFoX#8912)\``)
+})
