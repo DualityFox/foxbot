@@ -28,7 +28,7 @@ client.on('message', message => {
     command.run(message, args, client)
 })
 
-client.on(`guildMemberAdd`, member => { replies = [`${member} ! Bienvenue sur •|Fox Graff|• !`, `Accueillions tous ${member} qui débarque sur •|Fox Graff|• !`, `Oh ! Un(e) petit(e) nouveau(elle) !\nBienvenue à toi ${member} !`, `${member}, bonjour, passe un bon moment sur •|Fox Graff|• !`]
+client.on(`guildMemberAdd`, member => { replies = [`${member} ! Bienvenue sur •|Fox Graff|• !`, `Accueillions tous ${member} qui débarque sur •|Fox Graff|• !`, `Oh ! Un(e) petit(e) nouveau(elle) !\nBienvenue à toi ${member} !`, `${member}, bonjour, passe un bon moment sur •|Fox Graff|• !`,`Salutation à toi, ${member} !`]
    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${replies[Math.floor(Math.random() * replies.length)]}`)
 })
 
