@@ -51,7 +51,7 @@ client.on( 'ready', () => {
     setInterval(() => {
         client.user.setActivity(statuses[i](), {type: `WATCHING`,})
         i = ++i % statuses.length
-    },1e2)
+    },1e6)
 })
 
 client.on('channelCreate', channel => {
