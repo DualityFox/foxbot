@@ -43,6 +43,8 @@ client.on( 'ready', () => {
         () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 25} membres sur •|Fox Graff|• !`,
         () => `Je suis un robot déguisé en renard déguisé en robot !`,
         () => `Mon préfix est fb!`,
+        () => `DualityFox me maintien en vie`,
+        () => `Mafinity, Il t'accorde une grande confiance 🧡`,
         
     ]
     let i = 0
