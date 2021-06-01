@@ -42,6 +42,7 @@ client.on( 'ready', () => {
         () => `•|Fox Graff|•`,
         () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 26} membres sur •|Fox Graff|• !`,
         () => `•|Fox Graff|• recherche des modérateurs, envoie un message privé à 𝕯𝖚𝖆𝖑𝖎𝖙𝖞𝕱𝖔𝖝#6094 si intéressé`,
+        () => `Invite tes amis sur •|Fox Graff|•`
         () => `Mon préfix est fb!`,
         
     ]
