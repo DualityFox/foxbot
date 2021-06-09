@@ -1,6 +1,7 @@
 const Discord = require("discord.js")
 const parseDuration = require("parse-duration"),
     humanizeDuration = require("humanize-duration")
+config = require('../config.json')
 
 module.exports = {
     run: async (message, args) => {
@@ -14,16 +15,23 @@ module.exports = {
         if(!duration) return message.channel.send("Merci de préciser une durée\nUtilisation : ``fb!tempban [@mention] [durée] <raison>``")
         const reason = args.slice(2).join(" ") || 'Aucune raison fournie'
         await member.ban({reason})
-        message.channel.send( new Discord.MessageEmbed()
-        .setTitle(`Bannisement temporaire de ${member.user.tag}`)
+        message.channel.send(`${member} à été banni pendant ${humanizeDuration(duration, {language: 'fr'})}`)
+        message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
+        .setAuthor(`[BAN] ${member.user.tag}`, member.user.displayAvatarURL())
         .setColor('#ff0000')
+        .addField('Utilisateur', member, true)
+        .addField('Modérateur', message.author, true)
         .addField('Raison :', `${reason}`, true)
         .addField('Durée', `${humanizeDuration(duration, {language: 'fr'})}`, true)
-        .addField(`Banni temporairement par:`,`${message.author.username}`, true)
         )
         setTimeout(() => {
             message.guild.members.unban(member)
-            message.channel.send(`**${member.user.tag}** à été débanni.`)
+            message.channel.send(`**${member.username}** à été débanni.`)
+            message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
+            .setAuthor(`[UNBAN] ${member.username}`, member.user.displayAvatarURL())
+            .setColor('#ff0000')
+            .addField('Utilisateur', member, true)
+            .addField('Modérateur', `<@813734273894842370>`, true))
         },duration)
     },
     name: 'tempban',
