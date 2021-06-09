@@ -10,11 +10,14 @@ module.exports = {
         if(!member.bannable) return message.reply("Mon rôle n'est pas assez élevé pour bannir ce membre !")
         const reason = args.slice(1).join(" ") || 'Aucune raison fournie'
         await member.ban({reason})
-        message.channel.send( new Discord.MessageEmbed()
-        .setTitle(`Bannisement de ${member.user.tag}`)
+        message.channel.send(`${member.user.tag} à été banni !`)
+        message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
+        .setAuthor(`[BAN] ${member.user.tag}`, member.user.displayAvatarURL())
         .setColor('#ff0000')
+        .addField('Utilisateur', member, true)
+        .addField('Modérateur', message.author, true)
         .addField('Raison :', `${reason}`, true)
-        .addField(`Banni par :`, `${message.author.username}`, true)
+        .addField('Durée', '∞', true)
         )
     },
     name: 'ban',
