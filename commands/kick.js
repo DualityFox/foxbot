@@ -10,11 +10,13 @@ module.exports = {
         if(!member.kickable) return message.channel.send("Mon rôle n'est pas assez élevé pour exclure ce membre !")
         const reason = args.slice(1).join(" ") || 'Aucune raison fournie'
         await member.kick(reason)
-        message.channel.send( new Discord.MessageEmbed()
-        .setTitle(`Expulsion de ${member.user.tag}`)
+        message.channel.send(`${member.user.tag} à été expulsé !`)
+        message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
+        .setAuthor(`[KICK] ${member.user.tag}`, member.user.displayAvatarURL())
         .setColor('#ff6800')
+        .addField('Utilisateur', member, true)
+        .addField('Modérateur', message.author, true)
         .addField('Raison :', `${reason}`, true)
-        .addField(`Expulsé par:`,`${message.author.username}`, true)
         )
     },
     name: 'kick',
