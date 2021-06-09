@@ -1,5 +1,6 @@
 const Discord = require("discord.js")
 const fs = require("fs")
+config = require('../config.json')
 module.exports = {
     run: async (message, args, client) => {
         const guild = message.guild;
@@ -17,12 +18,14 @@ module.exports = {
             mod: message.author.id
         })
         fs.writeFileSync("./db.json", JSON.stringify(client.db))
-        message.channel.send(new Discord.MessageEmbed()
-        .setTitle(`Avertissement de ${member.user.tag}`)
-        .setColor('#ff6800')
-        .addField('Raison :', `${reason}`, true)
-        .addField(`Modérateur:`,`${message.author.username}`, true)
-        ),
+        message.channel.send(`${member} à été averti !`)
+        message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
+        .setAuthor(`[WARN] ${member.user.tag}`, member.user.displayAvatarURL())
+        .setColor('#ff0000')
+        .addField('Utilisateur', member, true)
+        .addField('Modérateur', message.author, true)
+        .addField('Raison', `${reason}`, true)
+        )
         message.mentions.members.first().createDM().then(channel => {channel.send(`Tu à était averti sur le serveur ${guild.name} pour la raison suivante : \`${reason}\`.`)});
     },
     name: 'warn',
