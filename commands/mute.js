@@ -1,4 +1,5 @@
 const Discord = require("discord.js")
+config = require('../config.json')
 
 module.exports = {
     run: async (message, args) => {
@@ -24,11 +25,14 @@ module.exports = {
             }))
         }
         await member.roles.add(muteRole)
-        message.channel.send( new Discord.MessageEmbed()
-        .setTitle(`Mute de ${member.user.tag}`)
-        .setColor('#ff6800')
-        .addField('Raison :', `${reason}`,true)
-        .addField(`Muté par:`,`${message.author.username}`,true)
+        message.channel.send(`${member} à été réduit au silence !`)
+        message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
+        .setAuthor(`[MUTE] ${member.user.tag}`, member.user.displayAvatarURL())
+        .setColor('#ff0000')
+        .addField('Utilisateur', member, true)
+        .addField('Modérateur', message.author, true)
+        .addField('Raison :', `${reason}`, true)
+        .addField('Durée', '∞', true)
         )
     },
     name: 'mute',
