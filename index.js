@@ -67,4 +67,5 @@ client.on('channelCreate', channel => {
 client.on('message', message => {
     if (message.content === "@everyone") return message.channel.send(`\`${message.author.tag}\`, il est interdit de mentionner everyone\n\`(sauf si tu est 𝕯𝖚𝖆𝖑𝖎𝖙𝖞𝕱𝖔𝖝#6094 où 𝕯𝖚𝖆𝖑𝖎𝖙𝖞𝕱𝖔𝖝 2#8912)\``)
     if (message.content === "@•|Fox Bot|•") return message.channel.send(`${message.author.tag}, mon préfix est \`fb!\``)
+    if (message.content === "<@813734273894842370>") return message.channel.send(`${message.author.tag}, mon préfix est \`fb!\``)
 })
