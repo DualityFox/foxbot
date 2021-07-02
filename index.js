@@ -40,8 +40,8 @@ client.on( 'ready', () => {
     client.user.setStatus("dnd")
     const statuses = [
         () => `•|Fox Graff|•`,
-        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 26} membres sur •|Fox Graff|• !`,
-        () => `•|Fox Graff|• recherche des modérateurs, envoie un message privé à 𝕯𝖚𝖆𝖑𝖎𝖙𝖞𝕱𝖔𝖝#6094 si intéressé`,
+        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 25} membres sur •|Fox Graff|• !`,
+        () => `•|Fox Graff|• recherche des modérateurs, envoie un message privé à Duality#0018 si intéressé`,
         () => `Invite tes amis sur •|Fox Graff|•`,
         () => `Mon préfix est fb!`,
         
@@ -65,7 +65,7 @@ client.on('channelCreate', channel => {
 })
 
 client.on('message', message => {
-    if (message.content === "@everyone") return message.channel.send(`\`${message.author.tag}\`, il est interdit de mentionner everyone\n\`(sauf si tu est 𝕯𝖚𝖆𝖑𝖎𝖙𝖞𝕱𝖔𝖝#6094 où 𝕯𝖚𝖆𝖑𝖎𝖙𝖞𝕱𝖔𝖝 2#8912)\``)
+    if (message.content === "@everyone") return message.channel.send(`\`${message.author.tag}\`, il est interdit de mentionner everyone\n\`(sauf si tu est DualityFox#0018 où DualityFox 2#0018)\``)
     if (message.content === "@•|Fox Bot|•") return message.channel.send(`${message.author.tag}, mon préfix est \`fb!\``)
     if (message.content === "<@813734273894842370>") return message.channel.send(`${message.author.tag}, mon préfix est \`fb!\``)
 })
