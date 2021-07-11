@@ -22,7 +22,7 @@ module.exports = {
             const page2 = new Discord.MessageEmbed()
             .setTitle('⚙️ Administration :')
             .setDescription("Voici toutes les commandes d'administration")
-            .addField('Liste des commandes', '**ban**: Banni l\'utilisateur mentionée\n\n**clear**: Supprime le nombre de message demander\n\n**kick**: Expulse le membre mentionné\n\n**mute**: Rend muet le membre mentionné\n\n**tempban**: Banni le membre mentionné pendant le temps donné\n\n**tempmute**: Rend muet le membre mentionné pendant le temps donné\n\n**unmute**: Réautorise le membre mentionné à parler\n\n**warn**: Avertit le membre mentionné *(lui envoie un message privé)*\n\n**unwarn**: Retire un warn au membre mentionné\n\n**infractions**: Affiche les infractions du membre mentionné',true)
+            .addField('Liste des commandes', '**ban**: Banni l\'utilisateur mentionée\n\n**clear**: Supprime le nombre de message demander\n\n**kick**: Expulse le membre mentionné\n\n**mute**: Rend muet le membre mentionné\n\n**tempban**: Banni le membre mentionné pendant le temps donné\n\n**tempmute**: Rend muet le membre mentionné pendant le temps donné\n\n**unmute**: Réautorise le membre mentionné à parler\n\n**warn**: Avertit le membre mentionné *(lui envoie un message privé)*\n\n**unwarn**: Retire un warn au membre mentionné\n\n**infractions**: Affiche les infractions du membre mentionné\n\n**say**: Envoie un message via le bot',true)
             .setColor('#ff0707')
             .setTimestamp();
 
