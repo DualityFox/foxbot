@@ -43,7 +43,7 @@ module.exports = {
             const page5 = new Discord.MessageEmbed()
             .setTitle("🎵 Musique")
             .setDescription("Voici toutes les commandes de musique")
-            .addField('Liste des commandes', '**play**: Demarre la musique demander\n\n**disconnect**: Stoppe la musique', true)
+            .addField('Liste des commandes', '**MERCI YOUTUBE, ON AS PLUS LE DROITS MAINTENANT, SALE MÉCHANT !!!**', true)
             .setColor('#216032')
             .setTimestamp();
 
