@@ -42,8 +42,8 @@ client.on( 'ready', () => {
     client.user.setStatus("dnd")
     const statuses = [
         () => `•|Fox Graff|•`,
-        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 25} membres sur •|Fox Graff|• !`,
-        () => `•|Fox Graff|• recherche des modérateurs, envoie un message privé à DualityFox#0018 si intéressé`,
+        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 22} membres sur •|Fox Graff|• !`,
+        () => `•|Fox Graff|• recherche des modérateurs, envoie un message privé à DualityFox#9406 si intéressé`,
         () => `Invite tes amis sur •|Fox Graff|•`,
         () => `Mon préfix est fb!`,
         
