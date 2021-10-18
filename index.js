@@ -43,8 +43,9 @@ client.on( 'ready', () => {
     const statuses = [
         () => `•|Fox Graff|•`,
         () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 22} membres sur •|Fox Graff|• !`,
-        () => `•|Fox Graff|• recherche des modérateurs, envoie un message privé à DualityFox#9406 si intéressé`,
         () => `Invite tes amis sur •|Fox Graff|•`,
+        () => `Nounard de retour sur Discord et •|Fox Graff|• ❤`,
+        () => `Je suis un robot déguisé en renard déguisé en robot !`,
         () => `Mon préfix est fb!`,
         
     ]
