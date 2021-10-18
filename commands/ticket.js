@@ -22,7 +22,7 @@ module.exports = {
         client.db.tickets[channel.id] = {
             author: message.author.id
         }
-        fs.writeFileSync('foxbot/db.json', JSON.stringify(client.db))
+        fs.writeFileSync('./db.json', JSON.stringify(client.db))
         channel.send(`Bonjour ${message.member}, bienvenue dans votre ticket.`)
         channel.send( new Discord.MessageEmbed()
         .setDescription('Pour fermer ce ticket tape ``fb!close`` .'))
