@@ -14,7 +14,7 @@ module.exports = {
             //}, {
               //  id: message.author.id,
                 //allow: 'VIEW_CHANNEL'
-            //}, ...config.ticket.roles.map(id => ({
+           //}, ...config.ticket.roles.map(id => ({
               //  id,
                 //allow: 'VIEW_CHANNEL'
             //}))]
@@ -27,7 +27,7 @@ module.exports = {
         //channel.send( new Discord.MessageEmbed()
         //.setDescription('Pour fermer ce ticket tape ``fb!close`` .'))
         //message.channel.send(`Votre ticket ${channel} a été créé !`)
-    return message.channel.send("Les tickets ont étaient temporairement désactivé"");},
+    return message.channel.send("__**Désolé !**__\nLes tickets ont étaient temporairement désactivé"");},
     name: 'ticket',
     guildOnly: true,
     help : {
