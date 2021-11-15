@@ -4,7 +4,7 @@ const moment = require("moment");
 module.exports = {
 
     run: async (message, args, client) => {
-
+        if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply("tu n'as pas la permission **Être DualityFox**.")
         message.channel.send(new Discord.MessageEmbed()
         .setDescription(`Information sur **${client.user.tag}**`)
         .setThumbnail(client.user.displayAvatarURL(String))
