@@ -20,7 +20,7 @@ module.exports = {
         .addField('Uptime :',`${Math.floor(client.uptime / 1000 / 60).toString()} minutes`,true)
         .addField(`\u200b`,`\u200b`, true)
         .addField("Version :","discord.js@12.3.1", true)
-        .addField('Source :','[GitHub] (https://github.com/DualityFox/Code-de-FoxBot-de-FoxGraff-Version-public-)',true)
+        .addField('Source :','[GitHub](https://github.com/DualityFox/Code-de-FoxBot-de-FoxGraff-Version-public-)',true)
         .addField('Support :', 'Aucun serveur de support')
         .setFooter(`Information sur ${client.user.username}`)
         .setTimestamp()
