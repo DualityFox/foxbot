@@ -4,7 +4,6 @@ const moment = require("moment");
 module.exports = {
 
     run: async (message, args, client) => {
-        if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply("tu n'as pas la permission **Être DualityFox**.")
         message.channel.send(new Discord.MessageEmbed()
         .setDescription(`Information sur **${client.user.tag}**`)
         .setThumbnail(client.user.displayAvatarURL(String))
@@ -21,7 +20,7 @@ module.exports = {
         .addField('Uptime :',`${Math.floor(client.uptime / 1000 / 60).toString()} minutes`,true)
         .addField(`\u200b`,`\u200b`, true)
         .addField("Version :","discord.js@12.3.1", true)
-        .addField('Source :','[GitHub]',true)
+        .addField('Source :','[GitHub] (https://github.com/DualityFox/Code-de-FoxBot-de-FoxGraff-Version-public-)',true)
         .addField('Support :', 'Aucun serveur de support')
         .setFooter(`Information sur ${client.user.username}`)
         .setTimestamp()
