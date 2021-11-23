@@ -15,7 +15,7 @@ module.exports = {
             const page1 = new Discord.MessageEmbed()
             .setTitle("Liste des commandes")
             .setDescription(`Pour plus d'info sur une commande tapez \`${config.prefix}help [nom de la commande]\``)
-            .addField("Sommaire", "Page 1 : **Sommaire**\nPage 2 : **⚙️Administration**\nPage 3 : **🎉Amusement**\nPage 4 : **📸 Image**\nPage 5 : **🎵 Musique**\nPage 6 : **📡 Utilitaire**\nPage 7 : **📌Autre**\nPage 8 : **🔗 Lien utile**")
+            .addField("Sommaire", "Page 1 : **Sommaire**\nPage 2 : **⚙️Administration**\nPage 3 : **🎉Amusement**\nPage 4 : **📸 Image**\nPage 5 : **📡 Utilitaire**\nPage 6 : **📌Autre**\nPage 7 : **🔗 Lien utile**")
             .setColor('#142c96')
             .setTimestamp();
 
@@ -41,27 +41,20 @@ module.exports = {
             .setTimestamp();
 
             const page5 = new Discord.MessageEmbed()
-            .setTitle("🎵 Musique")
-            .setDescription("Voici toutes les commandes de musique")
-            .addField('Liste des commandes', '**MERCI YOUTUBE, ON AS PLUS LE DROITS MAINTENANT, SALE MÉCHANT !!!**', true)
-            .setColor('#216032')
-            .setTimestamp();
-
-            const page6 = new Discord.MessageEmbed()
             .setTitle("📡 Utilitaire")
             .setDescription("Voici toutes les commandes utile")
             .addField('Liste des commandes','**ticket**: Ouvre un ticket à votre nom\n\n**close**: Ferme votre ticket\n\n**report**: Avertir les modérateurs d\'une fautes commis par quelqu\'un', true)
             .setColor('#0e0e0e')
             .setTimestamp();
 
-            const page7 = new Discord.MessageEmbed()
+            const page6 = new Discord.MessageEmbed()
             .setTitle("📌 Autre")
             .setDescription("Voici toutes les autres commandes")
             .addField('Liste des commandes','**help**: Cette commande même\n\n**botinfo**: Donne des informations sur le bot\n\n**serverinfo**: Donne des informations sur le serveur\n\n**userinfo**: Donne des informations sur l\'utilisateur mentionné', true)
             .setColor('#acaeac')
             .setTimestamp();
 
-            const page8 = new Discord.MessageEmbed()
+            const page7 = new Discord.MessageEmbed()
             .setTitle("🔗 Lien utile")
             .setDescription("Voici tout les liens utile")
             .addField('Liste des liens','[Donne ton avis sur •|Fox Graff|•](https://top.gg/servers/731599872892993626)\n[Vote pour •|Fox Graff|•](https://top.gg/servers/731599872892993626)\n[Donne ton avis et note •|Fox Graff|• sur DISBOARD](https://disboard.org/fr/server/731599872892993626)', false)
@@ -75,11 +68,10 @@ module.exports = {
                 page4,
                 page5,
                 page6,
-                page7,
-                page8
+                page7
             ]
 
-            const emoji = ["⬅️", "➡️"]
+            const emoji = ["⬅️", "➡️","🌐",]
 
             
 
