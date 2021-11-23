@@ -71,7 +71,7 @@ module.exports = {
                 page7
             ]
 
-            const emoji = ["⬅️", "➡️",":one:",]
+            const emoji = ["⬅️", "➡️",]
 
             
 
