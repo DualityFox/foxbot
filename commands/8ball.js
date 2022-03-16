@@ -1,9 +1,10 @@
 const Discord = require('discord.js'),
-    replies = ['Oui', 'Non', 'Peut être', 'Evidemment']
+    replies = ['Oui', 'Non', 'Peut être', 'Evidemment', 'Je ne sais pas', 'Je me pose moi même la question']
  
 module.exports = {
     run: (message, args) => {
         const question = args.join(' ')
+        if(message.mentions.members.first()) return message.channel.send('Demande lui directement')
         if (!question) return message.channel.send('Veuillez indiquer une question.')
         message.channel.send(new Discord.MessageEmbed()
             .addField(`Question`,`${question}`)
