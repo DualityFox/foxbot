@@ -41,12 +41,7 @@ client.on(`guildMemberRemove`, member => { replies = [`${member.user.tag} a quit
 client.on( 'ready', () => {
     client.user.setStatus("dnd")
     const statuses = [
-        () => `•|Fox Graff|•`,
-        () => `${client.guilds.cache.reduce((acc, guild) => acc + guild.memberCount, 0) - 22} membres sur •|Fox Graff|• !`,
-        () => `Invite tes amis sur •|Fox Graff|•`,
-        () => `Nounard de retour sur Discord et •|Fox Graff|• ❤`,
-        () => `Je suis un robot déguisé en renard déguisé en robot !`,
-        () => `Mon préfix est fb!`,
+        () => `Adieu •|Fox Graff|•`,
         
     ]
     let i = 0
