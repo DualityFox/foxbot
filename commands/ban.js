@@ -12,6 +12,9 @@ module.exports = {
         const reason = args.slice(1).join(" ") || 'Aucune raison fournie'
         await member.ban({reason})
         message.channel.send(`${member.user.tag} à été banni !`)
+        const reason = args.slice(1).join(" ")
+        message.mentions.members.first().createDM().then(channel => {channel.send(`Tu à été banni pour la raison suivante : ${reason}`)});
+        return message.channel.send(`Le message à bien était envoyé à **${message.mentions.members.first().user.username}** !`)
         message.guild.channels.cache.get(config.logs).send(new Discord.MessageEmbed()
         .setAuthor(`[BAN] ${member.user.tag}`, member.user.displayAvatarURL())
         .setColor('#ff0000')
