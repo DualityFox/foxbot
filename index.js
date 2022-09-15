@@ -30,13 +30,13 @@ client.on('message', message => {
     command.run(message, args, client)
 })
 
-client.on(`guildMemberAdd`, member => { replies = [`${member} ! Bienvenue sur •|Fox Graff|• !`, `Accueillions tous ${member} qui débarque sur •|Fox Graff|• !`, `Oh ! Un(e) petit(e) nouveau(elle) !\nBienvenue à toi ${member} !`, `${member}, bonjour, passe un bon moment sur •|Fox Graff|• !`,`Salutation à toi, ${member} !`]
-   member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${replies[Math.floor(Math.random() * replies.length)]}`)
-})
+//client.on(`guildMemberAdd`, member => { replies = [`${member} ! Bienvenue sur •|Fox Graff|• !`, `Accueillions tous ${member} qui débarque sur •|Fox Graff|• !`, `Oh ! Un(e) petit(e) nouveau(elle) !\nBienvenue à toi ${member} !`, `${member}, bonjour, passe un bon moment sur •|Fox Graff|• !`,`Salutation à toi, ${member} !`]
+  // member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${replies[Math.floor(Math.random() * replies.length)]}`)
+//})
 
-client.on(`guildMemberRemove`, member => { replies = [`${member.user.tag} a quitté le serveur... 😢`, `Au revoir ${member.user.tag}...`, `${member.user.tag} est parti...\nBye...`, `${member.user.tag} est parti.\nReviens quand tu veux`]
-    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${replies[Math.floor(Math.random() * replies.length)]}`)
-})
+//client.on(`guildMemberRemove`, member => { replies = [`${member.user.tag} a quitté le serveur... 😢`, `Au revoir ${member.user.tag}...`, `${member.user.tag} est parti...\nBye...`, `${member.user.tag} est parti.\nReviens quand tu veux`]
+//    member.guild.channels.cache.find(channel => channel.id === "814123969359249460").send(`${replies[Math.floor(Math.random() * replies.length)]}`)
+//})
 
 client.on( 'ready', () => {
     client.user.setStatus("dnd")
